@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/dark_grey">
+
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/card_design"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/formContainer"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="S'inscrire"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:background="@drawable/login_register_form"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="10dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </Space>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/login_register_form"
+                android:ems="10"
+                android:hint="Nom"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/editTextTextFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/login_register_form"
+                android:ems="10"
+                android:hint="Prénom"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/login_register_form"
+                android:ems="10"
+                android:hint="Adresse"
+                android:inputType="textPostalAddress"
+                android:paddingHorizontal="10dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/editTextTextPostalCode"
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/login_register_form"
+                android:ems="10"
+                android:hint="Code Postal"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:background="@drawable/login_register_form"
+            android:drawableStart="@drawable/login_register_form"
+            android:ems="10"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/cursor_color"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_login_button"
+            android:text="Inscription"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:text="Vous avec un compte ?"
+                android:textAlignment="center"
+                android:textColor="#7e7e7e" />
+
+            <TextView
+                android:id="@+id/goToLoginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Se connecter"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
